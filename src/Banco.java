@@ -3,9 +3,6 @@ public class Banco {
     int quantidadedeContas = 0;
 
     public int adicionarConta(Conta conta) {
-        //TODO adicionar conta nova em posicao se disponivel
-        //TODO bloquear em cinco contas
-
         if(this.quantidadedeContas == 5) {
             System.out.println("Total de contas atingindo !!");
             return 0;

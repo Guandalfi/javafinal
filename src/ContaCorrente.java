@@ -7,9 +7,8 @@ public class ContaCorrente extends Conta {
 
     @Override
     public void sacar(double valor) {
-        //TODO Rever essa conta
         if (this.saldo - valor < 0) {
-            if(valor > this.limite) {
+            if((this.saldo - valor) < (this.limite * -1)) {
             System.out.println("Valor maior que em conta!! Digite novamente");
             }
             else {
