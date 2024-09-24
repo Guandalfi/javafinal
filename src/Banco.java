@@ -13,7 +13,6 @@ public class Banco {
 
         return 0;
     }
-
     public Conta encontrarConta(int numero) {
         for (int i = 0; i < contas.length; i++) {
             if (this.contas[i].numero == numero) {
@@ -23,7 +22,10 @@ public class Banco {
         return null;
     }
 
+
     public void listaContas() {
-        //TODO Lista contas cadastradas, se não tiver nenhuma retorna mensagem de aviso.
+        for (int i = 0; i < contas.length; i++) {
+            System.out.println(contas[i].toString());
+        }
     }
 }
